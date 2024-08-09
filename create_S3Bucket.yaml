@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "this is my s3 bucket creation"
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:  
+      BucketName: "demo.aws.bob.example.com"
+      VersioningConfiguration:
+        Status: Enabled
+  MyNewInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: 
+  
